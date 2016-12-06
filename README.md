@@ -1,5 +1,7 @@
 # bunyan-format [![build status](https://secure.travis-ci.org/thlorenz/bunyan-format.png)](http://travis-ci.org/thlorenz/bunyan-format)
 
+> This is a fork which adds a few small tweaks by @jhaynie
+
 Writable stream that formats bunyan records that are piped into it
 
 ```js
@@ -29,7 +31,7 @@ var bunyan = require('bunyan')
 The output would use the string levels:
 
 ```
-$ node example/json-string-level.js 
+$ node example/json-string-level.js
 {"name":"app","hostname":"ubuntu","pid":28081,"level":"INFO","msg":"starting up","time":"2014-12-01T19:41:29.136Z","v":0}
 {"name":"app","hostname":"ubuntu","pid":28081,"level":"DEBUG","msg":"things are heating up { temperature: 80,\n  status: { started: 'yes', overheated: 'no' } }","time":"2014-12-01T19:41:29.142Z","v":0}
 {"name":"app","hostname":"ubuntu","pid":28081,"level":"WARN","msg":"getting a bit hot { temperature: 120 }","time":"2014-12-01T19:41:29.143Z","v":0}
@@ -48,14 +50,14 @@ $ node example/json-string-level.js
 ```
 /**
  * Creates a writable stream that formats bunyan records written to it.
- * 
+ *
  * @name BunyanFormatWritable
  * @function
  * @param opts {Options} passed to bunyan format function
  *  - outputMode: short|long|simple|json|bunyan
  *  - color (true): toggles colors in output
  *  - colorFromLevel: allows overriding log level colors
- * @param out {Stream} (process.stdout) writable stream to write 
+ * @param out {Stream} (process.stdout) writable stream to write
  * @return {WritableStream} that you can pipe bunyan output into
  */
 ```

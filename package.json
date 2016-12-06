@@ -1,6 +1,6 @@
 {
-  "name": "bunyan-format",
-  "version": "0.2.1",
+  "name": "jhaynie-bunyan-format",
+  "version": "0.0.1",
   "description": "Writable stream that formats bunyan records that are piped into it.",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/thlorenz/bunyan-format.git"
+    "url": "git://github.com/jhaynie/jhaynie-bunyan-format.git"
   },
-  "homepage": "https://github.com/thlorenz/bunyan-format",
+  "homepage": "https://github.com/jhaynie/bunyan-format",
   "dependencies": {
     "ansistyles": "~0.1.1",
     "ansicolors": "~0.2.1",
